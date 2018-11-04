@@ -29,6 +29,9 @@ export class Todo extends Entity {
     })
     remindAtGeo?: string; // latitude,longitude
 
+    @property()
+    todoListId: number;
+
     constructor(data?: Partial<Todo>) {
         super(data);
     }
